@@ -1,0 +1,112 @@
+html
+{
+    font-size: 16px;
+    color: antiquewhite;
+    background-color:antiquewhite;
+
+    .flex-container
+    {
+        width: 50rem;
+
+        margin: 0 auto;
+
+        padding: 1.25rem;
+        background-color: rgb(62, 1, 112);
+        border-radius: 10px;
+
+        .container-title
+        {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1.25rem;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: rgb(184, 104, 0);
+        }
+        .container-info
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .container-description
+            {
+                border-radius: 0.75rem;
+                text-align: center;
+                margin-bottom: 0.75rem;
+            }
+        }
+        .container-vote
+        {
+            margin: 0 1.5rem;
+            background-color: rgb(137, 46, 211);
+            padding: 1rem 0.5rem;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+
+
+            .vote-title
+            {
+                font-size: 1.8rem;
+                font-weight: 700;
+                text-align: center;
+            }
+            input
+            {
+                color: blue($color: #ff0000);
+                border: 0.1rem solid gray;
+                border-radius: 5px;
+                margin: 0 7rem;
+                margin-top: 1.3rem;
+                height: 1.25rem;
+                justify-content: center;
+
+                &:focus
+                {
+                    outline: none;
+                }
+                &::placeholder
+                {
+                    color: rgb(167, 167, 167);
+                }
+            }
+
+            .container-list
+            {
+                display: flex;
+                justify-content: space-around;
+                .container-candidate
+                {
+                    margin: 1rem;
+                    width: 100%;
+                    outline: 0.1rem;
+                    outline-color: blue;
+                    background-color: rgb(48, 48, 134);
+                }
+            }
+        }
+        
+        footer
+        {
+            text-align: center;
+            font-size: 0.8rem;
+        }
+    }
+
+}
+@media screen and (max-width:920px) {
+    html
+    {
+        font-size: 10px;
+    }
+    .flex-container
+    {
+        flex-direction: column;
+    }
+    .container-info,.container-vote
+    {
+        box-sizing: border-box;
+        font-size: 1.4rem;
+    }
+
+}
