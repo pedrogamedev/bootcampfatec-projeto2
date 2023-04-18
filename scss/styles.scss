@@ -133,17 +133,28 @@ html
     {
         flex-direction: column;
     }
+
+
     .container-info,.container-vote
     {
+        input
+        {
+            padding: 1rem;
+            width: 70%;
+        }
+
         box-sizing: border-box;
         font-size: 1.4rem;
     }
     .container-list
     {
+        .container-border
+        {
+            margin: 1rem 1rem;
+            width: 85%;
+        }
         margin-left: 7.5rem;
         flex-direction: column;
-        width: 50%;
-        height: 50%;
     }
 
 }
